@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "role": "Data Scientist",
+    "lang_toggle": "ES"
+  },
+  "hero": {
+    "line1": "Turning Data into",
+    "line2": "Insight"
+  },
+  "bio": {
+    "primary": "Hey! I'm a Mexico City based Data Scientist with a background in Data Modeling and Applied Mathematics.",
+    "secondary": "I specialize in solving retail problems through information and machine learning tools."
+  },
+  "nav_cards": {
+    "projects_title": "Explore projects →",
+    "projects_subtitle": "From descriptive analysis to accurate predictions: Informed decisions",
+    "about_title": "Get to know me →",
+    "about_subtitle": "Education, experience, and ideals: A glimpse into my background"
+  },
+  "footer": {
+    "contact": "Contact"
+  },
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "Professional profile"
+  },
+  "projects_page": {
+    "title": "Projects",
+    "details_open": "Details ↓",
+    "details_close": "Details ↑",
+    "tools_label": "Tools used:"
+  },
+  "about_page": {
+    "title": "Professional profile",
+    "education": "Education",
+    "experience": "Work Experience"
+  }
+}

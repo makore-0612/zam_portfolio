@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "role": "Científico de Datos",
+    "lang_toggle": "EN"
+  },
+  "hero": {
+    "line1": "Convirtiendo Datos en",
+    "line2": "Insights"
+  },
+  "bio": {
+    "primary": "¡Hola! Soy un Científico de Datos originario de Ciudad de México con experiencia en Modelado de Datos y Matemáticas Aplicadas.",
+    "secondary": "Me especializo en resolver problemas del sector retail mediante información y herramientas de machine learning."
+  },
+  "nav_cards": {
+    "projects_title": "Explora mis proyectos →",
+    "projects_subtitle": "Desde análisis descriptivo hasta predicciones precisas: Decisiones informadas",
+    "about_title": "Conóceme →",
+    "about_subtitle": "Educación, experiencia e ideales: Un vistazo a mi trayectoria"
+  },
+  "footer": {
+    "contact": "Contacto"
+  },
+  "menu": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Perfil profesional"
+  },
+  "projects_page": {
+    "title": "Proyectos",
+    "details_open": "Detalles ↓",
+    "details_close": "Detalles ↑",
+    "tools_label": "Herramientas:"
+  },
+  "about_page": {
+    "title": "Perfil profesional",
+    "education": "Educación",
+    "experience": "Experiencia Laboral"
+  }
+}
