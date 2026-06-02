@@ -14,7 +14,7 @@ export const education = [
     },
     es: {
       degree: 'Licenciatura en Matemáticas Aplicadas',
-      note: 'Curso introductorio previo a la ciencia de datos',
+      note: 'Curso introductorio previo a Ciencia de Datos',
       period: '2023 - 2025',
     },
   },
@@ -32,7 +32,7 @@ export const education = [
     es: {
       degree: 'Licenciatura en Ciencia de Datos',
       note: 'Con enfoque en finanzas y negocios',
-      period: '2025 - Esperado 2027',
+      period: '2025 - Proyectado a 2027',
     },
   },
 ]
@@ -56,7 +56,7 @@ export const experience = [
       summary: 'Test Engineer enfocado en garantizar la integridad de datos y la confiabilidad del sistema.',
       bullets: [
         'Garanticé la integridad de datos en plataformas digitales mediante consultas SQL avanzadas en Palantir Foundry.',
-        'Identifiqué y documentó errores críticos del sistema en colaboración con equipos de desarrollo.',
+        'Identifiqué y documenté errores críticos del sistema en colaboración con equipos de desarrollo.',
         'Mejoré los procesos de QA para cumplir con los estándares de seguridad y precisión.',
       ],
     },
@@ -80,7 +80,7 @@ export const experience = [
       bullets: [
         'Desarrollé dashboards interactivos en Excel conectados a bases de datos SQL para monitorear KPIs financieros y métricas de rotación de personal.',
         'Automaticé procesos de generación de reportes, reduciendo el tiempo de reporte mensual en aproximadamente un 30%.',
-        'Analicé variaciones presupuestarias e identificó desviaciones significativas respecto a los pronósticos.',
+        'Analicé variaciones presupuestarias e identifiqué desviaciones significativas respecto a los pronósticos.',
       ],
     },
   },
