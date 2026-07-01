@@ -6,6 +6,8 @@ import {
   SiDocker,
   SiKaggle,
   SiMetabase,
+  SiScikitlearn,
+  SiStreamlit
 } from 'react-icons/si'
 
 const BASE = import.meta.env.BASE_URL
@@ -29,6 +31,7 @@ export const projects = [
       { Icon: SiDocker,     color: '#2496ED', label: 'Docker'     },
       { Icon: SiMongodb,    color: '#47A248', label: 'MongoDB'    },
       { Icon: SiMetabase,   color: '#509EE3', label: 'Metabase'   },
+      { Icon: SiScikitlearn,   color: '#ff6d00', label: 'ScikitLearn'   },
     ],
     tags: {
       en: ['BI', 'ETL', 'Dashboard', 'Containers'],
@@ -38,22 +41,23 @@ export const projects = [
   {
     id: 2,
     title: {
-      en: 'Sports Intelligence for Cruz Azul F.C.',
-      es: 'Inteligencia Deportiva para Cruz Azul F.C.',
+      en: 'Analysis of seismic activity in Mexico',
+      es: 'Análisis de actividad sísmica en México',
     },
-    href: 'https://github.com/M1l3na24/Proyecto_Final_Calidad',
+    href: 'https://seismologicalintelligence.streamlit.app/',
     description: {
-      en: 'Design and implementation of a quality pipeline and data preprocessing on Mexican soccer, applying the DAMA-DMBOK framework to integrate, clean and analyze four heterogeneous sources that allow Cruz Azul F.C. to make more informed decisions about signings, performance and sports planning.',
-      es: 'Diseño e implementación de un pipeline de calidad y preprocesamiento de datos sobre fútbol mexicano, aplicando el marco DAMA-DMBOK para integrar, limpiar y analizar cuatro fuentes heterogéneas que permitan a Cruz Azul F.C. tomar decisiones más informadas sobre fichajes, rendimiento y planeación deportiva.',
+      en: 'Analysis of over 50 years of seismic events in Mexico to estimate — using regression models — the number of aftershocks within 24 hours and the maximum possible aftershock magnitude within 48 hours, via an interactive dashboard.',
+      es: 'Análisis de más de 50 años de eventos en México para estimar a través de modelos de regresión la cantidad de réplicas a 24 horas y mayor magnitud posible de réplica a 48 horas desde un dashboard interactivo',
     },
-    image: `${BASE}images/CAFC.png`,
+    image: `${BASE}images/seism.png`,
     tools: [
       { Icon: SiPython, color: '#3776AB', label: 'Python' },
-      { Icon: SiKaggle, color: '#20BEFF', label: 'Kaggle' },
+      { Icon: SiScikitlearn,   color: '#ff6d00', label: 'ScikitLearn'   },
+      { Icon: SiStreamlit,   color: '#E64748', label: 'Streamlit'   },
     ],
     tags: {
-      en: ['Prediction', 'Integration', 'Planning'],
-      es: ['Predicción', 'Integración', 'Planeación'],
+      en: ['Prediction', 'Investigation', 'Planning', 'Visualization'],
+      es: ['Predicción', 'Investigación', 'Planeación', 'Visualización'],
     },
   },
   {

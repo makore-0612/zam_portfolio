@@ -67,14 +67,14 @@ export default function HamburgerMenu() {
               exit={{ opacity: 0, scale: 0.88 }}
               transition={{ duration: 0.22, ease: 'easeOut' }}
               style={{ transformOrigin: 'top right' }}
-              className="fixed top-4 right-4 z-50 bg-slate-100 rounded-3xl
+              className="fixed top-4 right-4 z-50 bg-[#152032] border border-gray-700 rounded-3xl
                          p-7 w-72 md:w-80 flex flex-col gap-8 shadow-2xl"
             >
               <div className="flex justify-end">
                 <button onClick={close} aria-label="Close menu"
                   className="w-8 h-8 flex flex-col justify-center items-center gap-[5px] rounded-md cursor-pointer">
-                  <span className="block w-4 h-px bg-gray-700" />
-                  <span className="block w-4 h-px bg-gray-700" />
+                  <span className="block w-4 h-px bg-gray-300" />
+                  <span className="block w-4 h-px bg-gray-300" />
                   <span className="block w-4 h-px bg-gray-700" />
                 </button>
               </div>
@@ -87,8 +87,8 @@ export default function HamburgerMenu() {
                     onClick={close}
                     className={`text-2xl font-bold transition-colors duration-150 ${
                       location.pathname === to
-                        ? 'text-[#0B1120]'
-                        : 'text-gray-400 hover:text-[#0B1120]'
+                        ? 'text-white'
+                        : 'text-gray-500 hover:text-white'
                     }`}
                   >
                     {label}
@@ -98,17 +98,17 @@ export default function HamburgerMenu() {
 
               <div className="flex items-center gap-5">
                 <a href={`mailto:${u}@${d}`} aria-label="Email"
-                   className="text-gray-500 hover:text-[#0B1120] transition-colors">
+                   className="text-gray-400 hover:text-white transition-colors">
                   <FiMail size={20} />
                 </a>
                 <a href="https://www.linkedin.com/in/%C3%A1ngel-zamora-072674378"
                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-                   className="text-gray-500 hover:text-[#0B1120] transition-colors">
+                   className="text-gray-400 hover:text-white transition-colors">
                   <FiLinkedin size={20} />
                 </a>
                 <a href="https://github.com/makore-0612"
                    target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                   className="text-gray-500 hover:text-[#0B1120] transition-colors">
+                   className="text-gray-400 hover:text-white transition-colors">
                   <FiGithub size={20} />
                 </a>
               </div>

@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import SplitText from '../components/SplitText'
 import { education, experience } from '../data/profile'
 
@@ -18,10 +16,7 @@ export default function About() {
   const lang = i18n.language.startsWith('es') ? 'es' : 'en'
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-
-      <main className="flex-1 w-full max-w-6xl mx-auto px-4 pb-12">
+    <main className="flex-1 w-full max-w-6xl mx-auto px-4 pb-12">
 
         <div className="flex justify-center py-10 pb-14">
           <SplitText
@@ -103,9 +98,6 @@ export default function About() {
             ))}
           </div>
         </section>
-      </main>
-
-      <Footer />
-    </div>
+    </main>
   )
 }
