@@ -29,11 +29,15 @@
     "title": "Projects",
     "details_open": "Details ↓",
     "details_close": "Details ↑",
-    "tools_label": "Tools used:"
+    "tools_label": "Tools used:",
+    "more_text": "These are some of my projects, if you'd like to explore more, check them out",
+    "more_link": "here ↗"
   },
   "about_page": {
     "title": "Professional profile",
     "education": "Education",
-    "experience": "Work Experience"
+    "experience": "Work Experience",
+    "cv_text": "You can check my full curriculum",
+    "cv_link": "here ↗"
   }
 }

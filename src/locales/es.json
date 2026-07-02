@@ -29,11 +29,15 @@
     "title": "Proyectos",
     "details_open": "Detalles ↓",
     "details_close": "Detalles ↑",
-    "tools_label": "Herramientas:"
+    "tools_label": "Herramientas:",
+    "more_text": "Estos son algunos de mis proyectos, si deseas explorar más, accede",
+    "more_link": "aquí ↗"
   },
   "about_page": {
     "title": "Perfil profesional",
     "education": "Educación",
-    "experience": "Experiencia Laboral"
+    "experience": "Experiencia Laboral",
+    "cv_text": "Puedes leer mi currículum más a detalle",
+    "cv_link": "aquí ↗"
   }
 }

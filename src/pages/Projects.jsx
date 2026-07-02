@@ -30,6 +30,20 @@ export default function Projects() {
           <ProjectAccordion key={project.id} project={project} />
         ))}
       </div>
+
+      <div className="mt-10 mb-4 text-center">
+        <p className="text-gray-400 text-sm">
+          {t('projects_page.more_text')}{' '}
+          <a
+            href="https://github.com/makore-0612?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors"
+          >
+            {t('projects_page.more_link')}
+          </a>
+        </p>
+      </div>
     </main>
   )
 }
