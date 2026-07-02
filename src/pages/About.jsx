@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import SplitText from '../components/SplitText'
-import { education, experience } from '../data/profile'
+import { prof, education, experience } from '../data/profile'
 
 function SectionHeader({ title }) {
   return (
@@ -17,22 +17,36 @@ export default function About() {
 
   return (
     <main className="flex-1 w-full max-w-6xl mx-auto px-4 pb-12">
+        {/* ── Header & Intro ── */}
+        <div className="py-12 pb-16">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 items-center">
+            
+            <div className="w-full min-h-[120px] md:min-h-[200px] flex items-center">
+              <SplitText
+                text={t('about_page.title')}
+                tag="h1"
+                className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-none"
+                delay={35}
+                duration={0.85}
+                ease="power4.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 60 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="0px"
+                textAlign="left"
+              />
+            </div>
+            
+            <div className="flex flex-col justify-center">
+              {prof && prof[lang] && (
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed border-l-2 border-gray-700 pl-4 md:pl-6">
+                  {prof[lang]}
+                </p>
+              )}
+            </div>
 
-        <div className="flex justify-center py-10 pb-14">
-          <SplitText
-            text={t('about_page.title')}
-            tag="h1"
-            className="text-5xl md:text-8xl font-extrabold text-white pb-4"
-            delay={35}
-            duration={0.85}
-            ease="power4.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 60 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="0px"
-            textAlign="center"
-          />
+          </div>
         </div>
 
         {/* ── Education ── */}

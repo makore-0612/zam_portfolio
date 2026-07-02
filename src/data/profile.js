@@ -1,5 +1,10 @@
 const BASE = import.meta.env.BASE_URL
 
+export const prof = {
+  en : 'I am passionate about using data to find answers and optimize processes at scale. I have experience in financial analysis, data quality control, and automation. My day-to-day tools include Python, SQL, and Excel (among others), which I use to create dashboards, analyze KPIs, and streamline workflows. I am interested in everything related to analytics, applied data science, and machine learning in the business world.',
+  es : 'Me apasiona utilizar los datos para encontrar respuestas y optimizar procesos a gran escala. Tengo experiencia en análisis financiero, control de calidad de datos y automatización. Mis herramientas del día a día son Python, SQL y Excel (entre otras tantas), que uso para crear tableros, analizar KPIs y hacer que las cosas fluyan más rápido. Me interesa todo lo relacionado con la analítica, la ciencia de datos aplicada y el machine learning en el mundo de los negocios.'
+}
+
 export const education = [
   {
     id: 1,
