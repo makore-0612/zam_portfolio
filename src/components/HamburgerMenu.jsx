@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi'
 import { useTranslation } from 'react-i18next'
-
-const u = 'angeljza0612'
-const d = 'gmail.com'
+import SocialLinks from './SocialLinks'
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -72,10 +69,9 @@ export default function HamburgerMenu() {
             >
               <div className="flex justify-end">
                 <button onClick={close} aria-label="Close menu"
-                  className="w-8 h-8 flex flex-col justify-center items-center gap-[5px] rounded-md cursor-pointer">
-                  <span className="block w-4 h-px bg-gray-300" />
-                  <span className="block w-4 h-px bg-gray-300" />
-                  <span className="block w-4 h-px bg-gray-700" />
+                  className="relative w-8 h-8 flex items-center justify-center rounded-md cursor-pointer">
+                  <span className="absolute w-4 h-px bg-gray-300 rotate-45" />
+                  <span className="absolute w-4 h-px bg-gray-300 -rotate-45" />
                 </button>
               </div>
 
@@ -96,22 +92,7 @@ export default function HamburgerMenu() {
                 ))}
               </nav>
 
-              <div className="flex items-center gap-5">
-                <a href={`mailto:${u}@${d}`} aria-label="Email"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <FiMail size={20} />
-                </a>
-                <a href="https://www.linkedin.com/in/%C3%A1ngel-zamora-072674378"
-                   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <FiLinkedin size={20} />
-                </a>
-                <a href="https://github.com/makore-0612"
-                   target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <FiGithub size={20} />
-                </a>
-              </div>
+              <SocialLinks className="flex items-center gap-5" />
             </motion.div>
           </>
         )}

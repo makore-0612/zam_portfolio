@@ -1,8 +1,6 @@
-import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi'
 import { useTranslation } from 'react-i18next'
-
-const u = 'angeljza0612'
-const d = 'gmail.com'
+import SocialLinks from './SocialLinks'
+import { EMAIL } from '../data/social'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -13,28 +11,13 @@ export default function Footer() {
         <span className="text-gray-500 text-sm">© 2026</span>
 
         <a
-          href={`mailto:${u}@${d}`}
+          href={`mailto:${EMAIL}`}
           className="text-gray-400 text-sm hover:text-white transition-colors"
         >
           {t('footer.contact')}
         </a>
 
-        <div className="flex items-center gap-3">
-          <a href={`mailto:${u}@${d}`} aria-label="Email"
-             className="text-gray-400 hover:text-white transition-colors">
-            <FiMail size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/%C3%A1ngel-zamora-072674378"
-             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-             className="text-gray-400 hover:text-white transition-colors">
-            <FiLinkedin size={20} />
-          </a>
-          <a href="https://github.com/makore-0612"
-             target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-             className="text-gray-400 hover:text-white transition-colors">
-            <FiGithub size={20} />
-          </a>
-        </div>
+        <SocialLinks />
       </div>
     </footer>
   )
