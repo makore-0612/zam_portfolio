@@ -7,7 +7,8 @@ import {
   SiApachecassandra,
   SiDocker,
   SiGithub,
-  SiScikitlearn
+  SiScikitlearn,
+  SiClaude,
 } from 'react-icons/si'
 
 const BASE = import.meta.env.BASE_URL
@@ -21,7 +22,8 @@ const logos = [
   { node: <SiDocker      style={{ color: '#2496ED' }} />, title: 'Docker'      },
   { node: <SiGithub      style={{ color: '#e6edf3' }} />, title: 'GitHub'      },
   { node: <SiScikitlearn      style={{ color: '#ff6d00' }} />, title: 'ScikitLearn'      },
-  { src: `${BASE}images/powerbi.png`, alt: 'Power BI' }
+  { src: `${BASE}images/powerbi.png`, alt: 'Power BI' },
+  { node: <SiClaude      style={{ color: '#ff6d00' }} />, title: 'Claude'      },
 ]
 
 export default function TechStack() {

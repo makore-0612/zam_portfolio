@@ -9,11 +9,11 @@ export default function NavCards() {
   const { t } = useTranslation()
 
   return (
-    <section className="flex flex-col md:grid md:grid-cols-2 gap-3 pb-6">
+    <section className="flex flex-col md:grid md:grid-cols-2 gap-3 pb-6 ">
       <NavCard
         title={t('nav_cards.projects_title')}
         subtitle={t('nav_cards.projects_subtitle')}
-        imageSrc={`${BASE}images/bg-texture.jpg`}
+        imageSrc={`${BASE}images/bg-texture.png`}
         onClick={() => navigate('/projects')}
       />
       <NavCard

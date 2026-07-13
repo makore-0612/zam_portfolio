@@ -7,7 +7,9 @@ import {
   SiKaggle,
   SiMetabase,
   SiScikitlearn,
-  SiStreamlit
+  SiStreamlit,
+  SiPlotly,
+  SiPytest
 } from 'react-icons/si'
 
 const BASE = import.meta.env.BASE_URL
@@ -63,17 +65,19 @@ export const projects = [
   {
     id: 3,
     title: {
-      en: 'Analysis of eigenportfolios for investment',
-      es: 'Análisis de eigenportfolios para inversión',
+      en: 'Dashboard for calculating optimal portfolios',
+      es: 'Dashboard para cálculo de portafolios óptimos',
     },
-    href: 'https://drive.google.com/file/d/107rV4mPOvw6_H3rffp7saL0neWEX_irq/view?usp=sharing',
+    href: 'https://optimizacion-de-portafolios-bmv.onrender.com/',
     description: {
-      en: 'Using principal component analysis to find the ideal investment portfolio for 123 assets of the Mexican stock exchange, with error calculation and confidence interval in expected return.',
-      es: 'Uso de análisis de componentes principales para encontrar el portafolio de inversión ideal para 123 activos de la bolsa de valores mexicana, con cálculo de error e intervalo de confianza en el retorno esperado.',
+      en: 'Experiment, filter, and calculate the Markowitz efficient frontier for over 100 Mexican stock exchange assets using your desired parameters; obtain estimate evaluation through the spectral cutoff method.',
+      es: 'Experimenta, filtra y calcula con los parámetros que desees la frontera eficiente de Markowitz para más de 100 activos de la bolsa mexicana de valores; obtén evaluación de estimaciones a través del método de corte espectral.',
     },
-    image: `${BASE}images/eigen.png`,
+    image: `${BASE}images/bmv.png`,
     tools: [
       { Icon: SiPython, color: '#3776AB', label: 'Python' },
+      { Icon: SiPlotly, color: '#0C0C0C', label: 'Plotly' },
+      { Icon: SiPytest, color: '#3776AB', label: 'Pytest' },
     ],
     tags: {
       en: ['Academics', 'Optimization', 'Investigation'],

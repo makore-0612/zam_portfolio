@@ -9,7 +9,7 @@ export default function Navbar() {
   const toggle = () => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')
 
   return (
-    <nav className="w-full max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className="w-full max-w-6xl mx-auto px-4 py-3 flex items-center justify-between ">
       <Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
         <img
           src={`${BASE}images/logo.png`}
