@@ -4,6 +4,8 @@ Personal portfolio site for Angel Zamora — Data Scientist based in Mexico City
 
 **Live site:** https://makore-0612.github.io/zam_portfolio/
 
+![Pantalla de inicio](src/assets/muestra.png)
+
 ## Pages
 
 - **Home** — Hero, bio, and navigation cards
@@ -20,18 +22,5 @@ Personal portfolio site for Angel Zamora — Data Scientist based in Mexico City
 | i18n | i18next + react-i18next (ES / EN) |
 | Animation | GSAP + Framer Motion |
 | Deploy | GitHub Pages via `gh-pages` |
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Deploy
-
-```bash
-npm run deploy
-```
 
 Builds the project and pushes the `dist/` folder to the `gh-pages` branch.
