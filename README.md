@@ -22,5 +22,3 @@ Personal portfolio site for Angel Zamora — Data Scientist based in Mexico City
 | i18n | i18next + react-i18next (ES / EN) |
 | Animation | GSAP + Framer Motion |
 | Deploy | GitHub Pages via `gh-pages` |
-
-Builds the project and pushes the `dist/` folder to the `gh-pages` branch.
