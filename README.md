@@ -1,10 +1,16 @@
-# zam_portfolio
+![Pantalla de inicio](src/assets/banner_zam.png)
+
+---
+
+# Work Portfolio
 
 Personal portfolio site for Angel Zamora — Data Scientist based in Mexico City.
 
 **Live site:** https://makore-0612.github.io/zam_portfolio/
 
 ![Pantalla de inicio](src/assets/muestra.png)
+
+---
 
 ## Pages
 
