@@ -4,19 +4,15 @@
 
 # Work Portfolio
 
-Personal portfolio site for Angel Zamora — Data Scientist based in Mexico City.
-
-[**Live site**](https://makore-0612.github.io/zam_portfolio/)
-
-![Pantalla de inicio](src/assets/muestra1.png)
+In this space, I aim to showcase my experience, skills, and knowledge. [**Here**](https://makore-0612.github.io/zam_portfolio/), you'll find projects I've worked on, information about my education and professional experience, and glimpses into my personality, reflected in the design, layout, and details.
 
 ---
 
 ## Pages
 
-- **Home** — Hero, bio, and navigation cards
-- **Projects** — Accordion-style project showcase
-- **About** — Education and work experience
+- **Home** — A little bit about me, my background, philosophy, and the tools I've worked with.
+- **Projects** — Look into my work, my goals, and my abilities.
+- **About** — Explore my profile, my interests, and my qualifications.
 
 ## Tech Stack
 

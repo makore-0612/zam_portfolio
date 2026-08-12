@@ -23,8 +23,8 @@ export const projects = [
     },
     href: 'https://github.com/M1l3na24/Datengeist_BDNE',
     description: {
-      en: 'Creation of an ETL pipeline from PostgreSQL to MongoDB according to the medallion architecture to expedite the reading of information and calculation of relevant business metrics that allow for faster decision-making.',
-      es: 'Creación de un pipeline ETL desde PostgreSQL a MongoDB de acuerdo con la arquitectura medallion para agilizar la lectura de información y el cálculo de métricas de negocio relevantes que permitan una toma de decisiones más rápida.',
+      en: 'Creation of an ETL pipeline from PostgreSQL to MongoDB according to the medallion architecture to expedite the reading of information and calculation of relevant business metrics that allow for faster decision-making. I did it as part of an undergraduate project; it allowed me to identify the appropriate infrastructure according to the needs of a business and to optimize the processing and storage of information reducing the use of space and time.',
+      es: 'Creación de un pipeline ETL desde PostgreSQL a MongoDB de acuerdo con la arquitectura medallion para agilizar la lectura de información y el cálculo de métricas de negocio relevantes que permitan una toma de decisiones más rápida. Lo realicé como parte de una práctica en la licenciatura, me permitió identificar la infraestructura adecuada acorde a las necesidades de un negocio y a optimizar el procesamiento y guardado de información para reducir el uso de espacio y tiempo.',
     },
     image: `${BASE}images/datengeist.png`,
     tools: [
@@ -48,8 +48,8 @@ export const projects = [
     },
     href: 'https://seismologicalintelligence.streamlit.app/',
     description: {
-      en: 'Analysis of over 50 years of seismic events in Mexico to estimate — using regression models — the number of aftershocks within 24 hours and the maximum possible aftershock magnitude within 48 hours, via an interactive dashboard.',
-      es: 'Análisis de más de 50 años de eventos en México para estimar a través de modelos de regresión la cantidad de réplicas a 24 horas y mayor magnitud posible de réplica a 48 horas desde un dashboard interactivo',
+      en: 'Analysis of over 50 years of seismic events in Mexico to estimate — using regression models — the number of aftershocks within 24 hours and the maximum possible aftershock magnitude within 48 hours, via an interactive dashboard. Motivated by recent seismic events around the world, I set out to create this system. One of the biggest challenges in data processing was differentiating which earthquake the aftershocks belonged to, based on geographical analysis.',
+      es: 'Análisis de más de 50 años de eventos en México para estimar a través de modelos de regresión la cantidad de réplicas a 24 horas y mayor magnitud posible de réplica a 48 horas desde un dashboard interactivo. Motivado por los eventos sísmicos recientes a lo largo del mundo, me dispuse a crear este sistema. Uno de los mayores retos del procesamiento de los datos fue diferenciar a qué sismo pertenecían las réplicas acorde a los análisis geográficos.',
     },
     image: `${BASE}images/seism.png`,
     tools: [
@@ -65,13 +65,13 @@ export const projects = [
   {
     id: 3,
     title: {
-      en: 'Dashboard for calculating optimal portfolios',
+      en: 'Optimal portfolio calculation dashboard',
       es: 'Dashboard para cálculo de portafolios óptimos',
     },
     href: 'https://optimizacion-de-portafolios-bmv.onrender.com/',
     description: {
-      en: 'Experiment, filter, and calculate the Markowitz efficient frontier for over 100 Mexican stock exchange assets using your desired parameters; obtain estimate evaluation through the spectral cutoff method.',
-      es: 'Experimenta, filtra y calcula con los parámetros que desees la frontera eficiente de Markowitz para más de 100 activos de la bolsa mexicana de valores; obtén evaluación de estimaciones a través del método de corte espectral.',
+      en: 'Experiment, filter, and calculate the Markowitz efficient frontier for over 100 Mexican stock exchange assets using your desired parameters; obtain estimate evaluation through the spectral cutoff method. I created it based on the knowledge I gained while working on the end-of-semester project with classmates in the Introduction to Finance and Business course at university. It allowed me to put my fundamentals and skills into practice.',
+      es: 'Experimenta, filtra y calcula con los parámetros que desees la frontera eficiente de Markowitz para más de 100 activos de la bolsa mexicana de valores; obtén evaluación de estimaciones a través del método de corte espectral. Lo creé a partir de los conocimientos adquiridos mientras trabajaba en el proyecto de final de semestre junto a compañeros de clase en el curso Introducción a las finanzas y a la empresa en la universidad. Permitió poner en práctica mis fundamentos y capacidades.',
     },
     image: `${BASE}images/bmv.png`,
     tools: [
