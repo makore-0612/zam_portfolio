@@ -21,7 +21,7 @@ export default function ProjectAccordion({ project }) {
                      hover:text-teal-400 transition-colors duration-200"
         >
           {title[lang]}
-          <span className="text-base opacity-0 -translate-y-0.5 translate-x-0
+          <span className="text-base opacity-50 -translate-y-0.5 translate-x-0
                            group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-0.5
                            transition-all duration-200">
             ↗

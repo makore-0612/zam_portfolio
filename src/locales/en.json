@@ -27,6 +27,7 @@
   },
   "projects_page": {
     "title": "Projects",
+    "click_hint": "Does a project catch your eye? Click its title to check it out!",
     "details_open": "Details ↓",
     "details_close": "Details ↑",
     "tools_label": "Tools used:",

@@ -8,7 +8,7 @@ export default function Projects() {
 
   return (
     <main className="flex-1 w-full max-w-6xl mx-auto px-4 pb-10">
-      <div className="flex justify-center py-10 pb-14">
+      <div className="flex justify-center py-10 pb-8">
         <SplitText
           text={t('projects_page.title')}
           tag="h1"
@@ -24,6 +24,10 @@ export default function Projects() {
           textAlign="center"
         />
       </div>
+
+      <p className="text-center text-gray-400 text-base md:text-lg mb-6">
+        {t('projects_page.click_hint')}
+      </p>
 
       <div className="flex flex-col gap-4">
         {projects.map(project => (
