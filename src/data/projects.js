@@ -1,10 +1,8 @@
 import {
   SiPython,
-  SiMysql,
   SiPostgresql,
   SiMongodb,
   SiDocker,
-  SiKaggle,
   SiMetabase,
   SiScikitlearn,
   SiStreamlit,
@@ -76,8 +74,8 @@ export const projects = [
     image: `${BASE}images/bmv.png`,
     tools: [
       { Icon: SiPython, color: '#3776AB', label: 'Python' },
-      { Icon: SiPlotly, color: '#0C0C0C', label: 'Plotly' },
-      { Icon: SiPytest, color: '#3776AB', label: 'Pytest' },
+      { Icon: SiPlotly, color: '#7A76FF', label: 'Plotly' },
+      { Icon: SiPytest, color: '#0A9EDC', label: 'Pytest' },
     ],
     tags: {
       en: ['Academics', 'Optimization', 'Investigation'],

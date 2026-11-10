@@ -6,10 +6,16 @@ import SocialLinks from './SocialLinks'
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false)
+  const [prevPath, setPrevPath] = useState(null)
   const location = useLocation()
   const { t } = useTranslation()
 
   const close = () => setIsOpen(false)
+
+  if (prevPath !== location.pathname) {
+    setPrevPath(location.pathname)
+    if (isOpen) setIsOpen(false)
+  }
 
   useEffect(() => {
     const handler = e => { if (e.key === 'Escape') close() }
@@ -21,8 +27,6 @@ export default function HamburgerMenu() {
     document.body.style.overflow = isOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
   }, [isOpen])
-
-  useEffect(() => { close() }, [location.pathname])
 
   const navLinks = [
     { label: t('menu.home'),     to: '/'         },

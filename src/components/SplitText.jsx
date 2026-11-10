@@ -24,20 +24,18 @@ const SplitText = ({
   const ref = useRef(null);
   const animationCompletedRef = useRef(false);
   const onCompleteRef = useRef(onLetterAnimationComplete);
-  const [fontsLoaded, setFontsLoaded] = useState(false);
+  const [fontsLoaded, setFontsLoaded] = useState(() => document.fonts.status === 'loaded');
 
   useEffect(() => {
     onCompleteRef.current = onLetterAnimationComplete;
   }, [onLetterAnimationComplete]);
 
   useEffect(() => {
-    if (document.fonts.status === 'loaded') {
-      setFontsLoaded(true);
-    } else {
-      document.fonts.ready.then(() => {
-        setFontsLoaded(true);
-      });
-    }
+    let cancelled = false;
+    document.fonts.ready.then(() => {
+      if (!cancelled) setFontsLoaded(true);
+    });
+    return () => { cancelled = true; };
   }, []);
 
   useGSAP(
@@ -47,7 +45,7 @@ const SplitText = ({
       const el = ref.current;
 
       if (el._rbsplitInstance) {
-        try { el._rbsplitInstance.revert(); } catch (_) {}
+        try { el._rbsplitInstance.revert(); } catch { /* already reverted */ }
         el._rbsplitInstance = null;
       }
 
@@ -108,7 +106,7 @@ const SplitText = ({
         ScrollTrigger.getAll().forEach(st => {
           if (st.trigger === el) st.kill();
         });
-        try { splitInstance.revert(); } catch (_) {}
+        try { splitInstance.revert(); } catch { /* already reverted */ }
         el._rbsplitInstance = null;
       };
     },

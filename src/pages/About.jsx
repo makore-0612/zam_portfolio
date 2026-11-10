@@ -117,7 +117,7 @@ export default function About() {
           <p className="text-gray-400 text-sm">
             {t('about_page.cv_text')}{' '}
             <a
-              href="https://github.com/makore-0612/zam_portfolio/blob/23459e79e6148c1e95ca036df63c1c76e828b9e6/public/docs/curriculum.pdf"
+              href={`${import.meta.env.BASE_URL}docs/curriculum.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors"

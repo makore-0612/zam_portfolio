@@ -1,8 +1,10 @@
+import { lazy } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import About from './pages/About'
+
+const Home = lazy(() => import('./pages/Home'))
+const Projects = lazy(() => import('./pages/Projects'))
+const About = lazy(() => import('./pages/About'))
 
 export default function App() {
   return (
