@@ -1,6 +1,12 @@
 {
   "navbar": {
-    "role": "Científico de Datos",
+    "roles": [
+      "Científico de Datos",
+      "Machine Learning",
+      "Análisis de datos",
+      "Modelos predictivos",
+      "Business Intelligence"
+    ],
     "lang_toggle": "EN"
   },
   "hero": {
@@ -30,7 +36,6 @@
     "click_hint": "¿Algún proyecto te llama la atención? ¡Dale clic al título para visitarlo!",
     "details_open": "Detalles ↓",
     "details_close": "Detalles ↑",
-    "tools_label": "Herramientas:",
     "more_text": "Estos son algunos de mis proyectos, si deseas explorar más, accede",
     "more_link": "aquí ↗"
   },

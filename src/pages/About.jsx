@@ -1,12 +1,15 @@
 import { useTranslation } from 'react-i18next'
 import SplitText from '../components/SplitText'
+import ScrollFade from '../components/ScrollFade'
+import Spotlight from '../components/Spotlight'
+import Timeline, { TimelineItem } from '../components/Timeline'
 import { prof, education, experience } from '../data/profile'
 
 function SectionHeader({ title }) {
   return (
     <div className="flex items-center gap-4 mb-8">
       <h2 className="text-white font-bold text-2xl whitespace-nowrap">{title}</h2>
-      <div className="flex-1 border-t border-gray-700" />
+      <div className="flex-1 h-px bg-gradient-to-r from-teal-400/60 via-gray-700 to-transparent" />
     </div>
   )
 }
@@ -38,24 +41,25 @@ export default function About() {
               />
             </div>
             
-            <div className="flex flex-col justify-center">
+            <ScrollFade className="flex flex-col justify-center">
               {prof && prof[lang] && (
-                <p className="text-gray-300 text-base md:text-lg leading-relaxed border-l-2 border-gray-700 pl-4 md:pl-6">
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed border-l-2 border-teal-400/60 pl-4 md:pl-6">
                   {prof[lang]}
                 </p>
               )}
-            </div>
+            </ScrollFade>
 
           </div>
         </div>
 
         {/* ── Education ── */}
         <section className="mb-14">
-          <SectionHeader title={t('about_page.education')} />
+          <ScrollFade><SectionHeader title={t('about_page.education')} /></ScrollFade>
 
-          <div className="flex flex-col gap-8">
+          <Timeline>
             {education.map(item => (
-              <div key={item.id} className="flex items-start gap-5">
+              <TimelineItem key={item.id}>
+              <div className="flex items-start gap-5">
                 <a
                   href={item.logoHref}
                   target="_blank"
@@ -78,24 +82,28 @@ export default function About() {
                   </span>
                 </div>
               </div>
+              </TimelineItem>
             ))}
-          </div>
+          </Timeline>
         </section>
 
         {/* ── Work Experience ── */}
         <section>
-          <SectionHeader title={t('about_page.experience')} />
+          <ScrollFade><SectionHeader title={t('about_page.experience')} /></ScrollFade>
 
-          <div className="flex flex-col gap-8">
+          <Timeline>
             {experience.map(item => (
-              <div key={item.id} className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-5">
+              <TimelineItem key={item.id}>
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-5">
                 <div>
                   <h3 className="text-white font-bold text-3xl leading-snug">{item.title}</h3>
                   <p className="text-gray-400 text-md mt-1">{item.company}</p>
                   <p className="text-gray-400 text-md mt-0.5">{item[lang].location}</p>
                 </div>
 
-                <div className="bg-[#152032] rounded-2xl px-6 py-5">
+                <div className="group/spot relative overflow-hidden bg-[#152032] rounded-2xl px-6 py-5
+                                ring-1 ring-white/5 hover:ring-teal-400/30 transition-shadow duration-300">
+                  <Spotlight />
                   <p className="text-white text-sm font-medium mb-3 leading-snug">
                     {item[lang].summary}
                   </p>
@@ -109,23 +117,25 @@ export default function About() {
                   </ul>
                 </div>
               </div>
+              </TimelineItem>
             ))}
-          </div>
+          </Timeline>
         </section>
 
-        <div className="mt-14 mb-4 text-center">
+        <ScrollFade className="mt-14 mb-4 text-center">
           <p className="text-gray-400 text-sm">
             {t('about_page.cv_text')}{' '}
             <a
               href={`${import.meta.env.BASE_URL}docs/curriculum.pdf`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white underline underline-offset-4 hover:text-gray-300 transition-colors"
+              className="text-white underline underline-offset-4 decoration-teal-400/60
+                         hover:text-teal-300 transition-colors"
             >
               {t('about_page.cv_link')}
             </a>
           </p>
-        </div>
+        </ScrollFade>
     </main>
   )
 }

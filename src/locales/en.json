@@ -1,6 +1,12 @@
 {
   "navbar": {
-    "role": "Data Scientist",
+    "roles": [
+      "Data Scientist",
+      "Machine Learning",
+      "Data Analysis",
+      "Predictive Modeling",
+      "Business Intelligence"
+    ],
     "lang_toggle": "ES"
   },
   "hero": {
@@ -30,7 +36,6 @@
     "click_hint": "Does a project catch your eye? Click its title to check it out!",
     "details_open": "Details ↓",
     "details_close": "Details ↑",
-    "tools_label": "Tools used:",
     "more_text": "These are some of my projects, if you'd like to explore more, check them out",
     "more_link": "here ↗"
   },

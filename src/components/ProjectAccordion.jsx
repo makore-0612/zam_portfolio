@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import Spotlight from './Spotlight'
 
 export default function ProjectAccordion({ project }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,28 +11,47 @@ export default function ProjectAccordion({ project }) {
   const { title, href, description, image, tools, tags } = project
 
   return (
-    <div className="bg-[#152032] rounded-2xl overflow-hidden">
+    <div
+      className="group/spot relative bg-[#152032] rounded-2xl overflow-hidden
+                 ring-1 ring-white/5 hover:ring-teal-400/30 transition-shadow duration-300"
+    >
+      <Spotlight />
 
-      <div className="flex items-center justify-between px-6 py-5 gap-4">
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex items-center gap-1.5 text-white font-bold text-lg
-                     hover:text-teal-400 transition-colors duration-200"
-        >
-          {title[lang]}
-          <span className="text-base opacity-50 -translate-y-0.5 translate-x-0
-                           group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-0.5
-                           transition-all duration-200">
-            ↗
-          </span>
-        </a>
+      <div className="relative flex items-center justify-between px-6 py-5 gap-4">
+        <div className="flex flex-col gap-2 min-w-0">
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group text-white font-bold text-lg
+                       hover:text-teal-400 transition-colors duration-200"
+          >
+            {title[lang]}
+            <span className="inline-block ml-1.5 text-base opacity-50 -translate-y-0.5 translate-x-0
+                             group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-0.5
+                             transition-all duration-200">
+              ↗
+            </span>
+          </a>
+
+          <div className="flex items-center gap-2.5">
+            {tools.map(({ Icon, color, label }) => (
+              <Icon
+                key={label}
+                title={label}
+                aria-label={label}
+                style={{ color, fontSize: '1.15rem' }}
+                className="opacity-75 hover:opacity-100 hover:scale-110 transition-all duration-200"
+              />
+            ))}
+          </div>
+        </div>
 
         <button
           onClick={() => setIsOpen(o => !o)}
+          aria-expanded={isOpen}
           className="flex-shrink-0 text-gray-400 text-sm font-semibold
-                     hover:text-white transition-colors duration-200 cursor-pointer"
+                     hover:text-teal-300 transition-colors duration-200 cursor-pointer"
         >
           {isOpen ? t('projects_page.details_close') : t('projects_page.details_open')}
         </button>
@@ -46,12 +66,17 @@ export default function ProjectAccordion({ project }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             style={{ overflow: 'hidden' }}
+            className="relative"
           >
             <div className="flex flex-col md:flex-row gap-5 px-6 pb-6">
 
               <div className="flex-shrink-0 w-full md:w-52 h-44 rounded-xl overflow-hidden bg-[#0d1a2b]">
                 {image ? (
-                  <img src={image} alt={title[lang]} className="w-full h-full object-cover" />
+                  <img
+                    src={image}
+                    alt={title[lang]}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-gray-600 text-xs">
                     image placeholder
@@ -64,26 +89,13 @@ export default function ProjectAccordion({ project }) {
                   {description[lang]}
                 </p>
 
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-                  <div>
-                    <p className="text-white font-bold text-sm mb-2">
-                      {t('projects_page.tools_label')}
-                    </p>
-                    <div className="flex items-center gap-3">
-                      {tools.map(({ Icon, color, label }) => (
-                        <Icon key={label} title={label} style={{ color, fontSize: '1.75rem' }} />
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 justify-start sm:justify-end">
-                    {tags[lang].map(tag => (
-                      <span key={tag}
-                        className="bg-teal-600 text-white text-xs font-medium px-4 py-1.5 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  {tags[lang].map(tag => (
+                    <span key={tag}
+                      className="bg-teal-600/90 text-white text-xs font-medium px-4 py-1.5 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

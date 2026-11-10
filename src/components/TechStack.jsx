@@ -1,4 +1,5 @@
 import LogoLoop from './LogoLoop'
+import Reveal from './Reveal'
 import {
   SiPython,
   SiPostgresql,
@@ -28,7 +29,8 @@ const logos = [
 
 export default function TechStack() {
   return (
-    <section className="py-4">
+    <Reveal delay={0.1}>
+    <section className="py-4 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
       <LogoLoop
         logos={logos}
         speed={50}
@@ -37,10 +39,9 @@ export default function TechStack() {
         gap={48}
         hoverSpeed={0}
         scaleOnHover
-        fadeOut
-        fadeOutColor="#0B1120"
         ariaLabel="Tech stack"
       />
     </section>
+    </Reveal>
   )
 }

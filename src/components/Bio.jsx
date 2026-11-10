@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import Reveal from './Reveal'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -6,6 +7,7 @@ export default function Bio() {
   const { t } = useTranslation()
 
   return (
+    <Reveal>
     <section className="flex flex-row items-center gap-4 py-5">
       <img
         src={`${BASE}images/profile-pic.jpg`}
@@ -21,5 +23,6 @@ export default function Bio() {
         </p>
       </div>
     </section>
+    </Reveal>
   )
 }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import HamburgerMenu from './HamburgerMenu'
+import Typewriter from './Typewriter'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -9,7 +10,11 @@ export default function Navbar() {
   const toggle = () => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')
 
   return (
-    <header className="border-b border-gray-800">
+    <header className="relative border-b border-gray-800/80">
+      {/* Glass background lives on its own layer: putting backdrop-blur on the
+          <header> itself would trap the menu's `position: fixed` overlay/panel
+          inside the header box (and under the page content). */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[#0B1120]/70 backdrop-blur-md" />
       <nav className="w-full max-w-6xl mx-auto px-4 py-3 flex items-center justify-between ">
         <Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
           <img
@@ -19,9 +24,12 @@ export default function Navbar() {
           />
           <div className="flex flex-col leading-tight">
             <span className="text-white font-semibold text-sm">Ángel Zamora</span>
-            <span className="text-gray-400 text-[10px] tracking-widest uppercase">
-              {t('navbar.role')}
-            </span>
+            <Typewriter
+              words={t('navbar.roles', { returnObjects: true })}
+              startDelay={800}
+              prefix=""
+              className="text-[10px] tracking-widest uppercase min-h-[15px] whitespace-nowrap"
+            />
           </div>
         </Link>
 

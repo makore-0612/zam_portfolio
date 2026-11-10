@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="border-t border-gray-800 mt-auto">
+    <footer className="border-t border-gray-800/80 bg-[#0B1120]/70 backdrop-blur-md mt-auto">
       <div className="w-full max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <span className="text-gray-500 text-sm">© 2026</span>
 
