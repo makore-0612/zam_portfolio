@@ -10,8 +10,8 @@
     "lang_toggle": "EN"
   },
   "hero": {
-    "line1": "Desde datos hasta",
-    "line2": "logros"
+    "line1": "Convirtiendo datos en",
+    "line2": "insights"
   },
   "bio": {
     "primary": "¡Hola! Soy un Científico de Datos originario de Ciudad de México con experiencia en Modelado de Datos y Matemáticas Aplicadas.",
@@ -23,8 +23,15 @@
     "about_title": "Conóceme →",
     "about_subtitle": "Educación, experiencia e ideales: Un vistazo a mi trayectoria"
   },
+  "now": {
+    "title": "Ahora mismo",
+    "listening": "Escuchando",
+    "playing": "Jugando",
+    "learning": "Aprendiendo"
+  },
   "footer": {
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "version": "Versión"
   },
   "menu": {
     "home": "Inicio",

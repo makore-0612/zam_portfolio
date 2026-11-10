@@ -23,8 +23,9 @@ const logos = [
   { node: <SiDocker      style={{ color: '#2496ED' }} />, title: 'Docker'      },
   { node: <SiGithub      style={{ color: '#e6edf3' }} />, title: 'GitHub'      },
   { node: <SiScikitlearn      style={{ color: '#ff6d00' }} />, title: 'ScikitLearn'      },
-  { src: `${BASE}images/powerbi.png`, alt: 'Power BI' },
-  { node: <SiClaude      style={{ color: '#ff6d00' }} />, title: 'Claude'      },
+  { node: <img src={`${import.meta.env.BASE_URL}images/powerbi.png`} alt="" className="w-[1em] h-[1em]" />, title: 'Microsoft PowerBI'},
+  { node: <img src={`${import.meta.env.BASE_URL}images/excel.png`} alt="" className="w-[1em] h-[1em]" />, title: 'Microsoft Excel' },
+  { node: <img src={`${import.meta.env.BASE_URL}images/claudecode.png`} alt="" className="w-[1em] h-[1em]" />, title: 'Claude Code' },
 ]
 
 export default function TechStack() {

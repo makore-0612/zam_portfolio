@@ -8,7 +8,8 @@ export default function ProjectAccordion({ project }) {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('es') ? 'es' : 'en'
 
-  const { title, href, description, image, tools, tags } = project
+  const { title, href, description, image, tools, tags, collaborators } = project
+
 
   return (
     <div
@@ -88,6 +89,21 @@ export default function ProjectAccordion({ project }) {
                 <p className="text-gray-300 text-sm leading-relaxed">
                   {description[lang]}
                 </p>
+                {collaborators?.length > 0 && (
+                  <p className="text-gray-400 text-sm">
+                    {lang === 'es' ? 'En colaboración con ' : 'In collaboration with '}
+                    {collaborators.map((c, i) => (
+                      <span key={c.github}>
+                        <a href={c.github} target="_blank" rel="noopener noreferrer"
+                          className="text-teal-400 hover:underline">
+                          {c.name}
+                        </a>
+                        {i < collaborators.length - 1 && ', '}
+                      </span>
+                    ))}
+                  </p>
+                )}
+
 
                 <div className="flex flex-wrap gap-2">
                   {tags[lang].map(tag => (

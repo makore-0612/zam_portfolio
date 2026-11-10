@@ -23,8 +23,15 @@
     "about_title": "Get to know me →",
     "about_subtitle": "Education, experience, and ideals: A glimpse into my background"
   },
+  "now": {
+    "title": "Right now",
+    "listening": "Listening to",
+    "playing": "Playing",
+    "learning": "Learning"
+  },
   "footer": {
-    "contact": "Contact"
+    "contact": "Contact",
+    "version": "Version"
   },
   "menu": {
     "home": "Home",

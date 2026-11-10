@@ -7,7 +7,8 @@ import {
   SiScikitlearn,
   SiStreamlit,
   SiPlotly,
-  SiPytest
+  SiPytest,
+  SiKaggle,
 } from 'react-icons/si'
 
 const BASE = import.meta.env.BASE_URL
@@ -24,6 +25,13 @@ export const projects = [
       en: 'Creation of an ETL pipeline from PostgreSQL to MongoDB according to the medallion architecture to expedite the reading of information and calculation of relevant business metrics that allow for faster decision-making. I did it as part of an undergraduate project; it allowed me to identify the appropriate infrastructure according to the needs of a business and to optimize the processing and storage of information reducing the use of space and time.',
       es: 'Creación de un pipeline ETL desde PostgreSQL a MongoDB de acuerdo con la arquitectura medallion para agilizar la lectura de información y el cálculo de métricas de negocio relevantes que permitan una toma de decisiones más rápida. Lo realicé como parte de una práctica en la licenciatura, me permitió identificar la infraestructura adecuada acorde a las necesidades de un negocio y a optimizar el procesamiento y guardado de información para reducir el uso de espacio y tiempo.',
     },
+    collaborators: [
+      { name: 'Milena F. Rivera', github: 'https://github.com/M1l3na24' },
+      { name: 'Valentina A. Cruz', github: 'https://github.com/valentinaacruz' },
+      { name: 'Ángel N. Pérez', github: 'https://github.com/Noelllp' },
+      { name: 'Isaac Monroy', github: 'https://github.com/IsaacMoV' }
+    ],
+
     image: `${BASE}images/datengeist.png`,
     tools: [
       { Icon: SiPython,     color: '#3776AB', label: 'Python'     },
@@ -80,6 +88,34 @@ export const projects = [
     tags: {
       en: ['Academics', 'Optimization', 'Investigation'],
       es: ['Académico', 'Optimización', 'Investigación'],
+    },
+  },
+  {
+    id: 4,
+    title: {
+      en: 'Content-based music recommender',
+      es: 'Recomendador musical basado en contenido',
+    },
+    href: 'https://vibe-rhythming.streamlit.app/',
+    description: {
+      en: 'A music recommendation system where you pick songs you like and dislike, and four models (nearest neighbors, naive Bayes, association rules and logistic regression) generate recommendations you can compare side by side. It combines the dataset’s own attributes, such as BPM, genre and artist, with features I extracted from the lyrics using NLP. You can choose what the recommendations are based on (lyrics, tags, audio or everything), tune each model’s parameters, and discover what defines your taste through measures like Gini, entropy and chi-square. Building it showed me in practice how different classification approaches interpret the same taste profile.',
+      es: 'Sistema de recomendación musical en el que eliges canciones que te gustan y que no, y cuatro modelos (vecinos más cercanos, naive Bayes, reglas de asociación y regresión logística) generan recomendaciones que puedes comparar lado a lado. Combina atributos propios del dataset, como BPM, género y artista, con características que extraje de las letras mediante PLN. Puedes elegir en qué basar las recomendaciones (letra, etiquetas, audio o todo), ajustar los parámetros de cada modelo y descubrir qué define tus gustos con medidas como Gini, entropía y chi cuadrada. Construirlo me permitió ver en la práctica cómo distintos enfoques de clasificación interpretan un mismo perfil de gustos.',
+    },
+    collaborators: [
+      { name: 'Nadia Ramos', github: 'https://github.com/Nad2710' },
+      { name: 'Karen A. Castrillo', github: 'https://github.com/agn3si' }
+    ],
+
+    image: `${BASE}images/viber.png`,
+    tools: [
+      { Icon: SiPython, color: '#3776AB', label: 'Python' },
+      { Icon: SiScikitlearn,   color: '#ff6d00', label: 'ScikitLearn'   },
+      { Icon: SiStreamlit,   color: '#E64748', label: 'Streamlit'   },
+      { Icon: SiKaggle,      color: '#20BEFF', label: 'Kaggle'      },
+    ],
+    tags: {
+      en: ['Recommender', 'NLP', 'Classification', 'Streamlit'],
+      es: ['Recomendación', 'PLN', 'Clasificación', 'Streamlit'],
     },
   },
 ]

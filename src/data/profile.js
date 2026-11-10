@@ -13,13 +13,13 @@ export const education = [
     logoAlt: 'Facultad de Ciencias, UNAM',
     institution: 'Facultad de Ciencias, UNAM',
     en: {
-      degree: "Bachelor's in Applied Mathematics",
-      note: 'Introductory course prior to entering data science',
+      degree: "Applied Mathematics",
+      note: 'Partial Studies',
       period: '2023 - 2025',
     },
     es: {
-      degree: 'Licenciatura en Matemáticas Aplicadas',
-      note: 'Curso introductorio previo a Ciencia de Datos',
+      degree: 'Matemáticas Aplicadas',
+      note: 'Estudios parciales',
       period: '2023 - 2025',
     },
   },
@@ -37,7 +37,7 @@ export const education = [
     es: {
       degree: 'Licenciatura en Ciencia de Datos',
       note: 'Con enfoque en finanzas y negocios',
-      period: '2025 - Proyectado a 2027',
+      period: '2025 - Egreso estimado en 2027',
     },
   },
 ]
