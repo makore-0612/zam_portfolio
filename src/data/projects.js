@@ -79,6 +79,10 @@ export const projects = [
       en: 'Experiment, filter, and calculate the Markowitz efficient frontier for over 100 Mexican stock exchange assets using your desired parameters; obtain estimate evaluation through the spectral cutoff method. I created it based on the knowledge I gained while working on the end-of-semester project with classmates in the Introduction to Finance and Business course at university. It allowed me to put my fundamentals and skills into practice.',
       es: 'Experimenta, filtra y calcula con los parámetros que desees la frontera eficiente de Markowitz para más de 100 activos de la bolsa mexicana de valores; obtén evaluación de estimaciones a través del método de corte espectral. Lo creé a partir de los conocimientos adquiridos mientras trabajaba en el proyecto de final de semestre junto a compañeros de clase en el curso Introducción a las finanzas y a la empresa en la universidad. Permitió poner en práctica mis fundamentos y capacidades.',
     },
+    collaborators: [
+      { name: 'Milena F. Rivera', github: 'https://github.com/M1l3na24' },
+      { name: 'Ignacio Chuquiure', github: 'https://pinion.education/es/blog/author/ignacio/' }
+    ],
     image: `${BASE}images/bmv.png`,
     tools: [
       { Icon: SiPython, color: '#3776AB', label: 'Python' },
