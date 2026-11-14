@@ -26,8 +26,8 @@ export const projects = [
       es: 'Creación de un pipeline ETL desde PostgreSQL a MongoDB de acuerdo con la arquitectura medallion para agilizar la lectura de información y el cálculo de métricas de negocio relevantes que permitan una toma de decisiones más rápida. Lo realicé como parte de una práctica en la licenciatura, me permitió identificar la infraestructura adecuada acorde a las necesidades de un negocio y a optimizar el procesamiento y guardado de información para reducir el uso de espacio y tiempo.',
     },
     collaborators: [
-      { name: 'Milena F. Rivera', github: 'https://github.com/M1l3na24' },
-      { name: 'Valentina A. Cruz', github: 'https://github.com/valentinaacruz' },
+      { name: 'Milena F. Rivera', github: 'https://www.linkedin.com/in/milena-rivera-80801838a/' },
+      { name: 'Valentina A. Cruz', github: 'https://www.linkedin.com/in/valentinaacruzm/' },
       { name: 'Ángel N. Pérez', github: 'https://github.com/Noelllp' },
       { name: 'Isaac Monroy', github: 'https://github.com/IsaacMoV' }
     ],
@@ -80,7 +80,7 @@ export const projects = [
       es: 'Experimenta, filtra y calcula con los parámetros que desees la frontera eficiente de Markowitz para más de 100 activos de la bolsa mexicana de valores; obtén evaluación de estimaciones a través del método de corte espectral. Lo creé a partir de los conocimientos adquiridos mientras trabajaba en el proyecto de final de semestre junto a compañeros de clase en el curso Introducción a las finanzas y a la empresa en la universidad. Permitió poner en práctica mis fundamentos y capacidades.',
     },
     collaborators: [
-      { name: 'Milena F. Rivera', github: 'https://github.com/M1l3na24' },
+      { name: 'Milena F. Rivera', github: 'https://www.linkedin.com/in/milena-rivera-80801838a/' },
       { name: 'Ignacio Chuquiure', github: 'https://pinion.education/es/blog/author/ignacio/' }
     ],
     image: `${BASE}images/bmv.png`,
